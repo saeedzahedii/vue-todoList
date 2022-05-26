@@ -1,0 +1,51 @@
+.container {
+    background: #f1fbff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 10vh;
+    box-shadow: 0px 0px 10px 0px #00000020;
+}
+
+.row {
+    padding: 20px;
+    background: lightblue;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px !important;
+    box-shadow: 0px 0px 6px 0px #00000040;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.row-2 {
+    margin-top: 30px;
+}
+
+ul {
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.job-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: lightblue;
+    margin: 10px 5px;
+    padding: 8px 20px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #00000040;
+}
+
+.job-row.active {
+    background-color: green;
+}
+
+.job-row .title {
+    text-transform: capitalize;
+    color: white;
+}
