@@ -88,4 +88,17 @@ li {
 .job-row.active {
   background: green;
 }
+
+@media (max-width:576px) {
+  .job-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .job-row div {
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>

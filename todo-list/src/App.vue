@@ -1,8 +1,10 @@
 <template>
   <div id="app" class="container">
-    <h4 class="bi bi-card-checklist mb-3"> Todo List - VueJs</h4>
-    <addToList @onAddNew="addNewJob($event)" />
-    <jobsList :job="jobList" @deleteJob="deleteJob($event)" />
+    <div class="main">
+      <h4 class="bi bi-card-checklist mb-3"> Todo List - VueJs</h4>
+      <addToList @onAddNew="addNewJob($event)" />
+      <jobsList :job="jobList" @deleteJob="deleteJob($event)" />
+    </div>
   </div>
 </template>
 
@@ -33,6 +35,9 @@ export default {
 
 <style>
 .container {
+  margin-top: 10vh;
+}
+.main {
   background: #1b5f62;
   padding: 20px;
   border-radius: 10px;
