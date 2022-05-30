@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="add-main">
     <div class="add-to-list">
-      <input type="text" v-model="value" />
-      <button @click="onAddList()">add</button>
+      <input class="form-control" type="text" placeholder="please add your job title here" v-model="value" />
+      <button @click="onAddList()" class="btn btn-primary bi bi-plus-lg">add</button>
     </div>
   </div>
 </template>
@@ -31,4 +31,20 @@ export default {
 </script>
 
 <style scoped>
+.add-main {
+  background: lightcyan;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.add-to-list {
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+button.btn.btn-primary.bi.bi-plus-lg {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 </style>
